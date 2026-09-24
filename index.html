@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandwtch Dammam</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+        background: #111827;
+        color: #f9fafb;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at 15% 15%, rgba(236, 72, 153, 0.2), transparent 32%),
+          radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.18), transparent 32%),
+          #111827;
+      }
+
+      main {
+        width: min(100%, 480px);
+        padding: 42px 28px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 24px;
+        background: rgba(17, 24, 39, 0.78);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(14px);
+      }
+
+      h1 { margin: 0 0 10px; font-size: clamp(1.7rem, 5vw, 2.35rem); }
+      p { margin: 0 0 30px; color: #cbd5e1; }
+
+      .social-links { display: flex; justify-content: center; gap: 16px; }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 152px;
+        justify-content: center;
+        padding: 13px 18px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 13px;
+        font-weight: 700;
+        transition: transform 160ms ease-out, box-shadow 160ms ease-out;
+      }
+
+      .social-link:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25); }
+      .social-link:focus-visible { outline: 3px solid #f9fafb; outline-offset: 3px; }
+      .instagram { background: linear-gradient(135deg, #f9ce34, #ee2a7b 48%, #6228d7); }
+      .tiktok { background: #09090b; border: 1px solid #3f3f46; }
+      svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+      @media (max-width: 420px) {
+        .social-links { flex-direction: column; }
+        .social-link { width: 100%; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .social-link { transition: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Sandwtch Dammam</h1>
+      <p>تابعونا على منصات التواصل الاجتماعي</p>
+      <nav class="social-links" aria-label="روابط التواصل الاجتماعي">
+        <a class="social-link instagram" href="https://www.instagram.com/hangar_dammam_ksa?stkn=NGlpNTBma3B5bXEx" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على إنستقرام">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>
+          <span>إنستقرام</span>
+        </a>
+        <a class="social-link tiktok" href="https://www.tiktok.com/@hangars_panel_ksa" target="_blank" rel="noopener noreferrer" aria-label="تابعنا على تيك توك">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4v10.5a4.5 4.5 0 1 1-4-4.47" /><path d="M15 4c.5 2.4 2 3.8 4.5 4" /></svg>
+          <span>تيك توك</span>
+        </a>
+      </nav>
+    </main>
+  </body>
+</html>
